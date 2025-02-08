@@ -1,30 +1,25 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
+"""  ."""
 
 import reflex as rx
-
 from rxconfig import config
-
 
 class State(rx.State):
     """The app state."""
-
     ...
-
 
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
         rx.color_mode.button(position="top-right"),
         rx.vstack(
-            rx.heading("Bienvenido  a Reflex Con Mouredev!", size="9"),
+            rx.heading("Pagina de Bienvenida!", size="9"),
             rx.text(
-                "Get started by editing  -  Empieza editando  ",
-                rx.code(f"{config.app_name}/{config.app_name}.py"),
+                "Empieza editando  ",
                 size="5",
             ),
             rx.link(
-                rx.button("Check out our docs!  Chequea nuestros docuentos"),
-                href="https://reflex.dev/docs/getting-started/introduction/",
+                rx.button("HazClic"),
+                href="https://www.facebook.com//",
                 is_external=True,
             ),
             spacing="3",
